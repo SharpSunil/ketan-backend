@@ -1,6 +1,10 @@
-import { addEnquiry, deleteEnquiry, getAllEnquiry, getEnquiryById, updateEnquiry } from "../service/enquiryService";
-
-
+import {
+  addEnquiry,
+  deleteEnquiry,
+  getAllEnquiry,
+  getEnquiryById,
+  updateEnquiry,
+} from "../service/enquiryService";
 
 //----------------------Data Add Enquiry------------------//
 export const AddEnquiry = async (req, res) => {
@@ -91,5 +95,4 @@ export const DeleteEnquiry = async (req, res) => {
       error: error.message,
     });
   }
-}
-
+};
